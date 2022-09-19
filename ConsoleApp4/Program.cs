@@ -13,25 +13,18 @@ namespace ConsoleApp4
                                     
                
 
-            void FioAgeCity()
-            {
-                Random z = new Random();              
-                int c = z.Next(7);
-                int v = z .Next(7);
-                int s = z .Next(6);
+            void FioAgeCity(string fio, int age, string city)
+            {           
 
-                //Console.WriteLine(c);
-                //Console.WriteLine(v);
-                //Console.WriteLine(s);
-
-                if (c < fio.Length && v < age.Length && s < city.Length)
-                    Console.WriteLine("Имя - " + fio[c] + ". Возраст - " + age[v] + ". Место рождения - " + city[s] + ".");
+                Console.WriteLine("Имя - " + fio + ". Возраст - " + age + ". Место рождения - " + city + ".");
             }
             Console.WriteLine("Список человеков:");
+            Random z = new Random();
+            FioAgeCity(fio[z.Next(7)], age[z.Next(7)], city[z.Next(6)]);
+            FioAgeCity(fio[z.Next(7)], age[z.Next(7)], city[z.Next(6)]);
+            FioAgeCity(fio[z.Next(7)], age[z.Next(7)], city[z.Next(6)]);
 
-            FioAgeCity();
-            FioAgeCity();
-            FioAgeCity();
+
 
         }
     }
